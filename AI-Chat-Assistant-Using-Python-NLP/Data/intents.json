@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good day", "What's up"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What can I help you with?"],
+      "context_set": ""
+    },
+    {
+      "tag": "course_info",
+      "patterns": ["Tell me about the engineering courses", "What subjects are available?", "Course details"],
+      "responses": ["We offer courses in Telecommunications, DSP, IoT, and Signal Processing. Which one would you like to explore?"],
+      "context_set": "course_search"
+    },
+    {
+      "tag": "course_dsp",
+      "patterns": ["Digital Signal Processing", "DSP", "Tell me about DSP"],
+      "responses": ["DSP covers Discrete Fourier Transforms, filtering techniques, and digital system modeling."],
+      "context_filter": "course_search"
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Exit"],
+      "responses": ["Goodbye! Have a great day ahead.", "Catch you later!"],
+      "context_set": ""
+    }
+  ]
+}
